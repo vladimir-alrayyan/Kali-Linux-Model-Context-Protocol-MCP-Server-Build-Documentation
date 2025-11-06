@@ -43,3 +43,26 @@ Here’s a simplified breakdown of the process:
    Only the tools explicitly defined and exposed in the MCP configuration are accessible to the AI, ensuring **safety, reproducibility, and isolation**.
 
 This architecture enables **AI-augmented system interaction** — where Claude can intelligently decide when and how to use tools within Kali Linux, while all execution remains governed by the rules enforced through the MCP layer.
+
+## 🐳 Why Use Docker
+
+Running the **MCP Server** inside **Docker** provides a safe, portable, and reproducible environment — which is especially important when working with **Kali Linux** tools that interact closely with the system.
+
+Docker ensures that the AI’s access through MCP is strictly contained within a sandboxed container. This means the AI model (like Claude) can use powerful tools — such as network scanners, analyzers, and system utilities — **without posing a risk to the host machine**.
+
+### 🔒 Key Benefits of Using Docker for MCP
+
+1. **Isolation and Safety:**  
+   All commands, installations, and interactions happen inside a controlled container environment. This prevents the AI from directly affecting your main system.
+
+2. **Reproducibility:**  
+   Docker allows the exact same environment to be rebuilt anywhere, ensuring consistent MCP server behavior across systems.
+
+3. **Modularity:**  
+   You can easily customize, extend, or rebuild the container to include specific tools or scripts the AI should have access to.
+
+4. **Simplicity in Deployment:**  
+   Starting, stopping, or updating the MCP server becomes as easy as running a few Docker commands — no complex local configurations required.
+
+By using Docker, the MCP server can safely execute tasks and interact with Kali Linux utilities in an isolated, predictable environment. This setup provides the perfect balance between **AI autonomy** and **system security**, allowing the model to perform advanced operations without leaving its sandbox.
+
