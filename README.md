@@ -1,5 +1,6 @@
 # Kali-Linux-Model-Context-Protocol-MCP-Server-Build-Documentation
-Documentation and setup guide for building a **Model Context Protocol (MCP) Server** on **Kali Linux** using **Docker**, where **AI models control and interact with system tools securely and autonomously**.
+A project that demonstrates how to build a **Dockerized MCP Server** on **Kali Linux**, enabling **AI-driven control** over selected cybersecurity and system tools through the **Model Context Protocol**.
+
 
 ## 🧭 Overview
 
